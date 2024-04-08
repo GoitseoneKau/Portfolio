@@ -1,0 +1,640 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+body{
+    background: url("images/keyboard-6105750_1280.jpg") no-repeat center fixed;
+    background-size: cover;
+    padding:0;
+    color:snow;
+    margin: 0;
+    height: 100%;
+}
+
+
+.bio-sec{
+    height:1200px;
+    width: 100%;
+   
+    word-wrap: break-word;   /*break long words so they wrap onto next line */
+    margin-top: 50px;
+    font:  bold 16px "Arial Black", Arial;
+    color: rgb(255, 255, 255);
+}
+
+b{
+    font: bolder 20px "Georgia",Serif;
+}
+
+.nav-sec{
+    width: 100%;
+    height:50px;
+    background-color: rgba(46, 62, 16, 0.891);
+    position: -webkit-fixed; /* Safari */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#list{
+    float: right;
+}
+
+button.nav-menu{
+    display: none;
+    padding:10px;
+    height: 50px;
+    width: 80px;
+    border: 1px solid rgb(46, 62, 16);
+    background-color: rgba(46, 62, 16, 0.891);
+}
+
+button.nav-menu:hover{
+    background-color: rgba(0, 0, 0, 0.508);
+    color:white;
+}
+
+button.nav-menu:active {
+    background-color:rgb(46, 62, 16);
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+}
+
+
+.nav-logo{
+    margin-top:0;
+    height: 50px;
+    width: 200px;
+    float: left;
+    display: flex ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nav-list{
+   padding: 0px;
+    list-style-type:none;
+    top:0;
+    margin: 0;
+    height: 50px;
+}
+.nav-list> li.nav-link{
+    float: left;
+    text-align: center;
+}
+
+.nav-list> li.nav-menu{
+    display: none;
+}
+
+.nav-list> li>a{
+    text-decoration: none;
+    color:snow;
+    font:  bold 18px "Arial Black", Arial;
+    padding:14px;
+    width: 100%;
+    display: block;
+}
+
+.nav-list> li>a:hover{
+    background-color: rgba(0, 0, 0, 0.508);
+    color:white;
+}
+
+.CVV{
+    width: 100%;
+    padding: 30px 5px;
+    height: 65%;
+ 
+}
+.CVV video{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.summary{
+    width: 100%;
+    height: 35%; 
+    background: url("images/coffee-7567749_1280.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.bio{
+    content: "";
+    clear: both;
+    display: table;
+    width:50%;
+    /*background-color: rgba(86,53,23, 0.497);*/
+    background-color:rgba(34, 34, 34, 0.787);
+    float: left;
+    padding: 25px 60px ;
+    height: 100%;
+}
+
+.bio-para{
+    text-wrap: wrap;
+    width: 90%;
+}
+
+.image{
+    background-color: rgba(86,53,23, 0.787);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    float: right;
+    width: 50%;
+    user-select: none;
+}
+
+.bio-pic{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  width:40%; height:70%;
+}
+
+
+
+/*Contact details section*/
+/*container*/
+.contact-sec{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    font:  800 16px "Arial Black", Arial;
+}
+
+/*segment containing address and social media links*/
+.contact-details{
+    content: "";
+    clear: both;
+    display: table;
+    padding: 0px 30px;
+    width: 50%;
+    height: 100%;
+    float:left;
+    background-color: rgba(86,53,23, 0.787);
+}
+/*Physical Address*/
+.contact-details>address{
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    align-content: center;
+
+}
+
+/*Social Media*/
+.contact-details>.social-media{
+    width: 100%;
+    height: 30%;
+    padding: 5px;
+    align-content: center;
+    text-align: center;
+}
+.social-media>a{
+    color: #050505; 
+    padding:20px;
+    height:28px;
+}
+
+/*Quicklinks to other pages*/
+.quicklinks{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color:rgba(34, 34, 34, 0.787);
+    padding: 15px;
+    color: black;
+}
+
+.quicklinks>.links>li>a{
+    text-decoration: none;
+    color: #050505;
+}
+
+.quicklinks>.links>li>a:hover{
+    text-decoration: none;
+    color: snow
+}
+
+/*Map segment*/
+/*container*/
+.map-sec{
+    float: right;
+    padding: 15px;
+    background-color:rgba(34, 34, 34, 0.787);
+    width: 30%;
+    height: 100%;
+}
+
+/*Map elementt*/
+#map{
+  
+  width: 100%;
+    float: right;
+    border: 1px solid blue;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+@media  screen and (max-width:1100px) {
+    
+    .CVV{
+        height:30%;
+        padding: 0px 5px;
+    }
+    .summary{
+        height:70%;
+    }
+    .bio{
+        width: 100%;
+        height: 50%;
+     }
+    .bio-para{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        height: 50%;
+    }
+
+    .contact-details{
+        width: 100%;
+        background-color: rgba(86,53,23, 0.787);
+        background: url("images/coffee-7567749_1280.jpg") no-repeat center fixed;
+        background-size: cover;
+        display: flex;
+    }
+    /*Physical Address*/
+    .contact-details>address{
+        width: 50%;
+        float: left;
+    }
+
+    /*Social Media*/
+    .contact-details>.social-media{
+        width: 50%;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+ 
+    }
+    .social-media>a{
+        color: #050505; 
+        padding:5px;
+        text-wrap: nowrap;
+    }
+    .quicklinks{
+        width: 100%;
+        background-color: rgba(86,53,23, 0.787);
+    }
+    .map-sec{
+        width: 100%;
+        background-color:rgba(137, 144, 124, 0.283);
+    }
+}
+
+
+@keyframes navigate {
+    from{width: 0%;height:0vh}
+    to{height:100vh;width: 100%;}
+}
+
+
+@keyframes wipein {
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+
+@media  screen and (max-width:850px) {
+    .nav-list{
+        display: none;   
+    }
+    #list{
+        width: 100%;
+    }
+    
+    .btnActive{
+     
+        color:white;
+        border: 1px solid rgb(0, 0, 0);
+     
+    }
+    
+    .show{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(46, 62, 16, 0.891);
+        animation: navigate 2s ease;
+    }
+    li.nav-link{
+        width: 100%;
+    }
+    li.nav-link>a{
+        width: 100%;
+        animation:wipein 2s ease;
+    }
+    button.nav-menu{
+        display:block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+   
+    .CVV{
+        height:40%;
+        padding: 0px 5px;
+    }
+    .summary{
+        height:80%;
+    }
+    .bio{
+        width: 100%;
+        height: 60%;
+        background-color:rgba(34, 34, 34, 0.787);
+     }
+    .bio-para{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        height: 40%;
+    }
+    .bio-pic{
+        height: 75%;
+    }
+    .contact-details{
+        width: 100%;
+        background-color: rgba(86,53,23, 0.787);
+        background: url("images/coffee-7567749_1280.jpg") no-repeat center fixed;
+        background-size: cover;
+        display: flex;
+    }
+    /*Physical Address*/
+    .contact-details>address{
+        width: 50%;
+        float: left;
+        
+    }
+
+    /*Social Media*/
+    .contact-details>.social-media{
+        width: 50%;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+ 
+    }
+    .social-media>a{
+        color: #050505; 
+        padding:5px;
+        text-wrap: nowrap;
+    }
+    .quicklinks{
+        width: 100%;
+        
+        background-color: rgba(86,53,23, 0.787);
+    }
+    .map-sec{
+        width: 100%;
+        background-color:rgba(137, 144, 124, 0.283);
+    }
+}
+
+
+
+@media  screen and (max-width:650px) {
+    .nav-list{
+        display: none;   
+    }
+    .show{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(46, 62, 16, 0.891);
+    }
+    li.nav-link{
+        width: 100%;
+    }
+    li.nav-link>a{
+        width: 100%;
+    }
+    button.nav-menu{
+        display:block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+   
+    .bio{
+       width: 100%;
+       background-color:rgba(34, 34, 34, 0.787);
+    }
+    .CVV{
+        height:30%;
+        padding: 0px 5px;
+    }
+    .bio-para{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    .contact-details{
+        width: 100%;
+        background-color: rgba(86,53,23, 0.787);
+        display: flex;
+    }
+    /*Physical Address*/
+    .contact-details>address{
+        width: 50%;
+        float: left;
+    }
+
+    /*Social Media*/
+    .contact-details>.social-media{
+        width: 50%;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+ 
+    }
+    .social-media>a{
+        color: #050505; 
+        padding:5px;
+        text-wrap: nowrap;
+    }
+    .quicklinks{
+        width: 100%;
+        background-color: rgba(86,53,23, 0.787);
+    }
+    .map-sec{
+        width: 100%;
+        background-color:rgba(34, 34, 34, 0.787);
+    }
+}
+
+
+@media  screen and (max-width:480px) {
+    .nav-list{
+        display: none;   
+    }
+    .show{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(46, 62, 16, 0.891);
+    }
+    li.nav-link{
+        width: 100%;
+    }
+    li.nav-link>a{
+        width: 100%;
+    }
+    button.nav-menu{
+        display:block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+   
+    .bio{
+       width: 100%;
+       background-color:rgba(34, 34, 34, 0.787);
+    }
+    .CVV{
+        height:30%;
+        padding: 0px 5px;
+    }
+    .bio-para{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    
+    .contact-details{
+        width: 100%;
+        background-color: rgba(86,53,23, 0.787);
+        display: flex;
+    }
+    /*Physical Address*/
+    .contact-details>address{
+        width: 50%;
+        float: left;
+    }
+
+    /*Social Media*/
+    .contact-details>.social-media{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+ 
+    }
+    .social-media>a{
+        color: #050505; 
+        padding:5px;
+        text-wrap: nowrap;
+    }
+    .quicklinks{
+        width: 100%;
+        background-color: rgba(86,53,23, 0.787);
+    }
+    .map-sec{
+        width: 100%;
+        background-color:rgba(34, 34, 34, 0.787);
+    }
+}
+
+
+/*Bio image responsiveness*/
+@media  screen and (max-width:1365px) {
+    .bio-pic{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        border: 5px solid white;
+        width:40%; height:60%;
+    }
+}
+
+@media  screen and (max-width:1200px) {
+    .bio-pic{
+        width: 40%;
+        height: 60%;
+    }
+}
+
+@media  screen and (max-width:1150px) {
+    .bio-pic{
+        width: 40%;
+        height: 60%;
+    }
+}
+
+@media  screen and (max-width:1100px) {
+    .bio-pic{
+        width: 25%;
+        height: 60%;
+    }
+}
+
+@media  screen and (max-width:800px) {
+    .bio-pic{
+        width: 35%;
+        height: 70%;
+    }
+}
+@media  screen and (max-width:750px) {
+    .bio-pic{
+        width: 40%;
+        height: 70%;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .bio-pic{
+        width: 45%;
+        height: 70%;
+    }
+}
+
+@media  screen and (max-width:550px) {
+    .bio-pic{
+        width: 50%;
+        height: 70%;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    .bio-pic{
+        width: 55%;
+        height: 70%;
+    }
+}
+
+@media  screen and (max-width:480px) {
+    .bio-pic{
+        width: 55%;
+        height: 65%;
+    }
+}
+

@@ -1,0 +1,291 @@
+
+body{
+    background: url("images/car-8031261_1280.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+.about{
+    width: 100%;
+    margin-top: 250px;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.about>h1{
+    flex: 1 100%;
+   
+}
+
+.about>p,.about>ul{
+    flex: 1 50%;
+}
+
+.about>p{
+    text-align: left
+}
+
+h1,p{
+    text-align: center;
+}
+
+p{
+
+    font: 500 13px "Arial black";
+    flex-wrap: wrap;
+}
+
+h1{
+    font: bold 40px "Arial Black" ;
+}
+
+ul>h2{
+    margin: 0 0 15px 0;
+    font: bold 20px "Arial Black" ;
+text-align: center;
+}
+ul.certificates{
+    padding: 0px 10px;
+    margin: 13px 0px;
+}
+
+ul.certificates>li{
+    list-style: none;
+    padding: 5px;
+}
+
+ul.certificates>li>a{
+    font: 500 13px "Arial black";
+    text-decoration: none;
+    color: black;
+}
+
+ul.certificates>li>a:hover{
+    color: rgb(0, 11, 169);
+}
+ul.certificates>li>a>b{
+    font-size: 15px;
+}
+
+
+
+.drive{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+}
+
+.drive>div.drive_image{
+    flex: 2 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.driven_text{
+    padding: 10px;
+    flex: 2 50%;
+    width: 100%;
+    height: 100%;
+}
+.driven_text>p{
+    text-align: left;
+}
+
+h1.driveHead{
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+.closing{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 250px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.text1{
+    padding: 25px;
+    flex: 2 50%;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+.btn{
+    padding: 15px;
+}
+.btn-contact{
+    text-decoration:none;
+    background-color:black;
+    text-align: center; 
+    color: snow;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-contact:hover{
+    background-color:snow;
+    color: black;
+
+}
+
+.img1{
+  
+    flex: 2 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav-sec{
+    background-color: rgba(0, 0, 0, 0.891);
+}
+
+.nav-list> li>a:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+button.nav-menu{
+    background-color: rgba(0, 0, 0, 0.891);
+    border: 1px solid rgb(0, 0, 0);
+    color: snow;
+}
+
+button.nav-menu:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+
+/*header for drive media queries,centering drive title*/
+@media  screen and (max-width:1200px) { 
+    h1.driveHead{
+        top: 95%;
+        left: 25%;
+    }
+}
+
+
+@media  screen and (max-width:850px) {  
+    h1.driveHead{
+        top: 100%;
+        left: 50%;
+    }
+}
+@media  screen and (max-width:750px) {  
+    h1.driveHead{
+        top: 100%;
+        left: 50%;
+    }
+}
+@media  screen and (max-width:700px) {  
+    h1.driveHead{
+        top: 105%;
+        left: 50%;
+    }
+}
+@media  screen and (max-width:650px) {  
+    h1.driveHead{
+        top: 110%;
+        left: 50%;
+    }
+}
+@media  screen and (max-width:620px) {  
+    h1.driveHead{
+        top: 115%;
+        left: 50%;
+    }
+}
+
+@media  screen and (max-width:600px) {  
+    h1.driveHead{
+        top: 105%;
+        left: 50%;
+    }
+}
+
+@media  screen and (max-width:510px) {  
+    h1.driveHead{
+        top: 110%;
+        left: 50%;
+    }
+}
+
+@media  screen and (max-width:500px) {  
+    h1.driveHead{
+        top: 110%;
+        left: 50%;
+    }
+}
+
+
+
+  
+/*navigation bar and div tags responsiveness*/ 
+@media  screen and (max-width:850px) {
+    
+    button.btnActive:active{
+        background-color: rgba(0, 0, 0, 0.508);
+        color:rgb(0, 0, 0);
+        border: 1px solid rgb(255, 255, 255);
+        
+    }
+    .about>p,.about>ul{
+        flex: 1 100%;
+    }
+    .drive{  
+        margin-top: 130px;
+    }
+    .drive>div.drive_image{
+   
+        flex: 1 100%;
+        height: 100%;
+    }
+    
+    .driven_text{
+        padding: 10px;
+        flex: 1 100%;
+        height: 100%;
+    }
+
+    .closing{
+        flex-direction: row-reverse;
+    }
+    .text1{
+        padding: 5px;
+        flex: 1 100%;
+        height: 30%;
+        width: 100%;;
+        flex-direction: row-reverse;
+    }
+    
+    .img1{
+        flex: 1 100%;
+        height:70%;
+        flex-direction: row-reverse;
+    }
+    
+    
+    .show{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(8, 8, 7, 0.891);
+        animation: navigate 2s ease;
+    }
+}
+
