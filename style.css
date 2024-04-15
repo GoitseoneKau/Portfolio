@@ -17,7 +17,6 @@ body{
 .bio-sec{
     height:1200px;
     width: 100%;
-   
     word-wrap: break-word;   /*break long words so they wrap onto next line */
     margin-top: 50px;
     font:  bold 16px "Arial Black", Arial;
@@ -45,7 +44,7 @@ b{
 button.nav-menu{
     display: none;
     padding:10px;
-    height: 50px;
+    height: 100%;
     width: 80px;
     border: 1px solid rgb(46, 62, 16);
     background-color: rgba(46, 62, 16, 0.891);
@@ -93,15 +92,17 @@ button.nav-menu:active {
 .nav-list> li>a{
     text-decoration: none;
     color:snow;
-    font:  bold 18px "Arial Black", Arial;
+    font:  bold 16px "Arial Black", Arial;
     padding:14px;
     width: 100%;
+
     display: block;
 }
 
 .nav-list> li>a:hover{
     background-color: rgba(0, 0, 0, 0.508);
     color:white;
+    height: 100%;
 }
 
 .CVV{
@@ -169,6 +170,7 @@ button.nav-menu:active {
     width: 100%;
     height: 250px;
     margin: auto;
+    margin-top: 250px;
     font:  800 16px "Arial Black", Arial;
 }
 
