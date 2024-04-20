@@ -33,7 +33,6 @@ h1,p{
 }
 
 p{
-
     font: 500 13px "Arial black";
     flex-wrap: wrap;
 }
@@ -45,8 +44,9 @@ h1{
 ul>h2{
     margin: 0 0 15px 0;
     font: bold 20px "Arial Black" ;
-text-align: center;
+    text-align: center;
 }
+
 ul.certificates{
     padding: 0px 10px;
     margin: 13px 0px;
@@ -66,10 +66,10 @@ ul.certificates>li>a{
 ul.certificates>li>a:hover{
     color: rgb(0, 11, 169);
 }
+
 ul.certificates>li>a>b{
     font-size: 15px;
 }
-
 
 .drive{
     display: flex;
@@ -86,7 +86,6 @@ ul.certificates>li>a>b{
     width: 100%;
     height: 100%;
 }
-
 
 .driven_text{
     padding: 40px 10px;
@@ -107,6 +106,7 @@ h1.driveHead{
     line-height:-10px;
     font-size: 60px;
 }
+
 .closing{
     display: flex;
     justify-content: center;
@@ -115,7 +115,6 @@ h1.driveHead{
     width: 100%;
     margin-top: 250px;
     background-color: rgb(255, 255, 255);
-
 }
 
 .text1{
@@ -126,10 +125,10 @@ h1.driveHead{
     color: black;
 }
 
-
 .btn{
     padding: 15px;
 }
+
 .btn-contact{
     text-decoration:none;
     background-color:black;
@@ -143,11 +142,9 @@ h1.driveHead{
 .btn-contact:hover{
     background-color:snow;
     color: black;
-
 }
 
 .img1{
-  
     flex: 2 50%;
     width: 100%;
     height: 100%;
@@ -183,31 +180,34 @@ button.nav-menu:hover{
     }
 }
 
-
 @media  screen and (max-width:850px) {  
     h1.driveHead{
         top: 125%;
         left: 50%;
     }
 }
+
 @media  screen and (max-width:750px) {  
     h1.driveHead{
         top: 100%;
         left: 50%;
     }
 }
+
 @media  screen and (max-width:700px) {  
     h1.driveHead{
         top: 105%;
         left: 50%;
     }
 }
+
 @media  screen and (max-width:650px) {  
     h1.driveHead{
         top: 110%;
         left: 50%;
     }
 }
+
 @media  screen and (max-width:620px) {  
     h1.driveHead{
         top: 115%;
@@ -236,9 +236,6 @@ button.nav-menu:hover{
     }
 }
 
-
-
-  
 /*navigation bar and div tags responsiveness*/ 
 @media  screen and (max-width:850px) {
     
@@ -248,14 +245,16 @@ button.nav-menu:hover{
         border: 1px solid rgb(255, 255, 255);
         
     }
+
     .about>p,.about>ul{
         flex: 1 100%;
     }
+
     .drive{  
         margin-top: 130px;
     }
+
     .drive>div.drive_image{
-   
         flex: 1 100%;
         height: 100%;
     }
@@ -269,6 +268,7 @@ button.nav-menu:hover{
     .closing{
         flex-direction: row-reverse;
     }
+
     .text1{
         padding: 5px;
         flex: 1 100%;
@@ -283,7 +283,6 @@ button.nav-menu:hover{
         flex-direction: row-reverse;
     }
     
-    
     .show{
         display: block;
         width: 100%;
@@ -291,5 +290,6 @@ button.nav-menu:hover{
         background-color: rgba(8, 8, 7, 0.891);
         animation: navigate 2s ease;
     }
+
 }
 

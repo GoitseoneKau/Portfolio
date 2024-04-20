@@ -6,17 +6,17 @@ body{
 
 .contact{
     margin-top: 200px;
-    padding: 10px;
-    /* Center horizontally*/
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    height: 685px;
     background-color: rgba(0, 0, 0, 0.301);
 }
+
 .form-sec{
-    flex: 2 50%;
+    flex: 2 100%;
     padding: 10px;
-    /* Center horizontally*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,21 +24,23 @@ body{
 }
 
 .location-sec{
-    flex: 2 50%;
+    flex: 2 100%;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.404);
 }
-
 
 h1{
     font-size: 40px;
     text-align: center;
 }
+
 form{
-   display: block;
+    display: block;
     background-color: #a3a6a563;
     padding: 30px;
 }
@@ -53,7 +55,8 @@ label{
     display: block;
     padding: 5px;
 }
-input[type=text],input[type=email], select, textarea {
+
+input[type=text], input[type=email], select, textarea {
   width: 350px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -77,18 +80,17 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-
 .contact-details{
     width: 70%;
     background-color: #545454e6;;
 }
+
 .contact-details>address{
     width: 50%;
     height: 100%;
     padding: 10px;
     align-content: center;
     float: left;
-
 }
 
 /*Social Media*/
@@ -100,7 +102,12 @@ input[type=submit]:hover {
     text-align: center;
     float: right;
 }
-.quicklinks{width:30%;float: right;background-color: #545454c8;}
+
+.quicklinks{
+    width:30%;
+    float: right;
+    background-color: #545454c8;
+}
 
 .nav-sec{
 background: url("images/wood-1866667_1280.jpg") fixed no-repeat center;
@@ -114,18 +121,19 @@ background-size: cover;
 
 button.nav-menu{
     background-color: rgba(155, 155, 155, 0.155);
-    border: 1px solid rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
 }
 
 button.nav-menu:hover{
     background-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
+    border: 0px;
 }
 
 
-
 @media  screen and (max-width:1100px) {
+
     .contact-details>address{
         width: 100%;
         height: 100%;
@@ -136,32 +144,34 @@ button.nav-menu:hover{
     }
     
     /*Social Media*/
-.contact-details>.social-media{
-    display: flex;
-    width: 50%;
-    height:100%;
-    padding: 100px;
-    align-content: center;
-    text-align: center;
-    background-color: #545454c8;
+    .contact-details>.social-media{
+        display: flex;
+        width: 50%;
+        height:100%;
+        padding: 100px;
+        align-content: center;
+        text-align: center;
+        background-color: #545454c8;
+    }
 
-}
     .contact-details{
         width: 70%;
         background: url("images/pen-4337521_1280 (2).jpg") no-repeat center fixed;
         background-size: cover;
-    
         padding: 0;
     }
-    .quicklinks{width:30%;float: right;}
+
+    .quicklinks{
+        width:30%;
+        float: right;
+    }
+
 }
+
 @media  screen and (max-width:850px) {
    
-    .btnActive{
-     
+    .btnActive:active{
         color:white;
-        border: 1px solid rgb(0, 0, 0);
-     
     }
     
     .show{
@@ -171,6 +181,22 @@ button.nav-menu:hover{
         background: url("images/wood-1866667_1280.jpg") fixed no-repeat center;
         background-size: cover;
         animation: navigate 2s ease;
+    }
+
+    .contact{
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.404);
+        height: 1200px;
+    }
+
+    .location-sec{
+        padding: 20px;
+        flex: 1 100%;
+    }
+
+    form{
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .contact-details>address{
@@ -183,47 +209,74 @@ button.nav-menu:hover{
     }
     
     /*Social Media*/
-.contact-details>.social-media{
-    display: flex;
-    width: 50%;
-    height:100%;
-    padding: 100px;
-    align-content: center;
-    text-align: center;
-    background-color: #7777774a;
-}
+    .contact-details>.social-media{
+        display: flex;
+        width: 50%;
+        height:100%;
+        padding: 100px;
+        align-content: center;
+        text-align: center;
+        background-color: #7777774a;
+    }
+
     .contact-details{
         width: 100%;
         background: url("images/pen-4337521_1280 (2).jpg") no-repeat center fixed;
         background-size: cover;
-    
         padding: 0;
     }
-    .quicklinks{width:100%;float: right;background: url("images/wood-1866667_1280.jpg") no-repeat center fixed;
-        background-size: cover;}
+
+    .quicklinks{
+        width:100%;
+        float: right;
+        background: url("images/wood-1866667_1280.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
    
 }
 
 @media screen and (max-width:700px) {
-    
-    .form-sec{
-        float: left;
-       
-        padding: 10px;
-        /* Center horizontally*/
-        display: flex;
+    .contact{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.404);
+        height: 1200px;
+        width: 100%;
     }
-    
+
     .location-sec{
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
+        padding: 20px;
+        flex: 1 100%;
     }
-    
+
+    .form-sec{
+        flex: 1 100%;
+    }
+
+    form{
+        background-color: rgba(0, 0, 0, 0);
+    }    
+}
+
+@media screen and (max-width:360px) {
+    .contact{
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.404);
+        height: 1200px;
+        width: 100%;
+    }
+
+    .location-sec{
+        padding: 2px;
+        flex: 1 100%;
+    }
+
+    .form-sec{
+        flex: 1 100%;
+    }
+
+    form{
+        background-color: rgba(0, 0, 0, 0);
+    }    
 }

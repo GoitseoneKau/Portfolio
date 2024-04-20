@@ -45,7 +45,7 @@ button.nav-menu{
     display: none;
     padding:10px;
     height: 100%;
-    width: 80px;
+    width: 10%;
     border: 1px solid rgb(46, 62, 16);
     background-color: rgba(46, 62, 16, 0.891);
 }
@@ -55,12 +55,12 @@ button.nav-menu:hover{
     color:white;
 }
 
-button.nav-menu:active {
+/* button.nav-menu:active {
     background-color:rgb(46, 62, 16);
     box-shadow: 0 2px #666;
     transform: translateY(1px);
 }
-
+ */
 
 .nav-logo{
     margin-top:0;
@@ -72,7 +72,6 @@ button.nav-menu:active {
     margin-right: auto;
 }
 
-
 .nav-list{
    padding: 0px;
     list-style-type:none;
@@ -80,6 +79,7 @@ button.nav-menu:active {
     margin: 0;
     height: 50px;
 }
+
 .nav-list> li.nav-link{
     float: left;
     text-align: center;
@@ -92,7 +92,7 @@ button.nav-menu:active {
 .nav-list> li>a{
     text-decoration: none;
     color:snow;
-    font:  bold 16px "Arial Black", Arial;
+    font:  bold 15px "Arial Black", Arial;
     padding:14px;
     width: 100%;
 
