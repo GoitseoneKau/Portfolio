@@ -1,15 +1,17 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding:0;
   }
 
 
 
 body{
-    background: url("images/keyboard-6105750_1280.jpg") no-repeat center fixed;
+    background: url("images/keyboard2.jpg") no-repeat center fixed;
     background-size: cover;
-    padding:0;
+  
     color:snow;
-    margin: 0;
+   
     height: 100%;
 }
 
@@ -30,7 +32,8 @@ b{
 .nav-sec{
     width: 100%;
     height:50px;
-    background-color: rgba(46, 62, 16, 0.891);
+    /*background-color: rgba(46, 62, 16, 0.891);*/
+    background-color: rgba(0, 0, 0, 0.891);
     position: -webkit-fixed; /* Safari */
     position: fixed;
     top: 0;
@@ -46,8 +49,11 @@ button.nav-menu{
     padding:10px;
     height: 100%;
     width: 10%;
-    border: 1px solid rgb(46, 62, 16);
-    background-color: rgba(46, 62, 16, 0.891);
+
+    border: 1px solid rgb(0, 0, 0);
+    /*background-color: rgba(46, 62, 16, 0.891);*/
+    background-color: rgba(0, 0, 0, 0.891);
+    color: snow;
 }
 
 button.nav-menu:hover{
@@ -340,7 +346,7 @@ button.nav-menu:hover{
         display: block;
         width: 100%;
         height: 100vh;
-        background-color: rgba(46, 62, 16, 0.891);
+        background-color: rgba(0, 0, 0, 0.891);
         animation: navigate 2s ease;
     }
     li.nav-link{
@@ -428,7 +434,7 @@ button.nav-menu:hover{
         display: block;
         width: 100%;
         height: 100vh;
-        background-color: rgba(46, 62, 16, 0.891);
+        background-color: rgba(0, 0, 0, 0.891);
     }
     li.nav-link{
         width: 100%;
@@ -501,7 +507,7 @@ button.nav-menu:hover{
         display: block;
         width: 100%;
         height: 100vh;
-        background-color: rgba(46, 62, 16, 0.891);
+        background-color: rgba(0, 0, 0, 0.891);
     }
     li.nav-link{
         width: 100%;
