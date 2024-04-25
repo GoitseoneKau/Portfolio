@@ -32,8 +32,10 @@ b{
 .nav-sec{
     width: 100%;
     height:50px;
+    background: url("images/wood-1866667_1280.jpg") fixed no-repeat center;
+background-size: cover;
     /*background-color: rgba(46, 62, 16, 0.891);*/
-    background-color: rgba(0, 0, 0, 0.891);
+    /*background-color: rgba(0, 0, 0, 0.891);*/
     position: -webkit-fixed; /* Safari */
     position: fixed;
     top: 0;
@@ -97,7 +99,7 @@ button.nav-menu:hover{
 
 .nav-list> li>a{
     text-decoration: none;
-    color:snow;
+    color: snow;
     font:  bold 15px "Arial Black", Arial;
     padding:14px;
     width: 100%;
@@ -106,8 +108,8 @@ button.nav-menu:hover{
 }
 
 .nav-list> li>a:hover{
-    background-color: rgba(0, 0, 0, 0.508);
-    color:white;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     height: 100%;
 }
 
@@ -223,7 +225,9 @@ button.nav-menu:hover{
     padding: 15px;
     color: black;
 }
-
+.quicklinks>.links>li{
+    margin-left: 15px;
+}
 .quicklinks>.links>li>a{
     text-decoration: none;
     color: #050505;
