@@ -42,11 +42,11 @@ h1{
 form{
     display: block;
     background-color: #a3a6a563;
-    padding: 30px;
+    padding: 0px;
 }
 
 .form-group{
-    padding: 5px;
+    padding: 5px 20px;
     width: 100%;
     display: inline-block;
 }
@@ -68,56 +68,62 @@ input[type=text], input[type=email], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #000000;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 35%;
+  margin-bottom: 5%;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ffffff;
+  color: #000000;
 }
+
 
 .contact-details{
-    width: 70%;
-    background-color: #545454e6;;
+    width: 40%;
+    background-color: #54545477;
 }
 
-.contact-details>address{
-    width: 50%;
-    height: 100%;
-    padding: 10px;
-    align-content: center;
-    float: left;
-}
+
 
 /*Social Media*/
 .contact-details>.social-media{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 30%;
     padding: 5px;
-    align-content: center;
-    text-align: center;
-    float: right;
+    color: #ffffff;
+}
+
+.contact-details>.social-media>a{
+    color: #ffffff;
 }
 
 .quicklinks{
     width:30%;
-    float: right;
-    background-color: #545454c8;
+    height: 100%;
+    float: left;
+    background-color: #54545478;
+    padding: 15px;
+    color: #ffffff;
+    align-content: center;
 }
 
+
 .nav-sec{
-background: url("images/wood-1866667_1280.jpg") fixed no-repeat center;
-background-size: cover;
+    background: url("images/wood-1866667_1280.jpg") fixed no-repeat center;
+    background-size: cover;
 }
 
 .nav-list> li>a:hover{
     background-color: rgb(255, 255, 255);
     color:rgb(0, 0, 0);
 }
+
 
 button.nav-menu{
     background-color: rgba(155, 155, 155, 0.155);
@@ -131,41 +137,73 @@ button.nav-menu:hover{
     border: 0px;
 }
 
+.contact-details>.social-media>a :hover{
+    color: #000000;
+}
+
+/*Map segment*/
+/*container*/
+.map-sec{
+    float: right;
+    padding: 15px;
+    width: 30%;
+    height: 100%;
+}
+
+/*Map elementt*/
+#map{
+  
+  width: 100%;
+    float: right;
+    border: 1px solid black;
+    height: 100%;
+    border-radius: 10px;
+}
 
 @media  screen and (max-width:1100px) {
-
+    .contact-sec{
+        background-color: #54545478;
+        height: 800px;
+    }
+    .contact-details{
+        width: 100%;
+        height: 30%;
+        backdrop-filter: blur(5px);
+    }
     .contact-details>address{
         width: 100%;
-        height: 100%;
-        padding: 50px;
+        float: left;
+        height: 60%;
+        display: flex;
+        justify-content: center;
         align-content: center;
-        color: rgb(0, 0, 0);
-        background-color: #545454c8;
+        color: #ffffff
     }
     
     /*Social Media*/
     .contact-details>.social-media{
         display: flex;
         width: 50%;
-        height:100%;
-        padding: 100px;
+        height: 40%;
         align-content: center;
         text-align: center;
-        background-color: #545454c8;
-    }
-
-    .contact-details{
-        width: 70%;
-        background: url("images/pen-4337521_1280 (2).jpg") no-repeat center fixed;
-        background-size: cover;
-        padding: 0;
+        gap: 50px;
     }
 
     .quicklinks{
-        width:30%;
-        float: right;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
     }
-
+    .map-sec{
+        width: 100%;
+        height: 40%;
+        backdrop-filter: blur(5px);
+    }
 }
 
 @media  screen and (max-width:850px) {
@@ -176,13 +214,29 @@ button.nav-menu:hover{
     
     .show{
         display: block;
+        margin-top: -50px;
         width: 100%;
         height: 100vh;
-        background: url("images/wood-1866667_1280.jpg") fixed no-repeat center;
-        background-size: cover;
+        opacity: 1;
+        z-index: 1;
         animation: navigate 2s ease;
     }
 
+    .nav-list> li.close-link{
+        display: block;
+    }
+
+   
+    .hide{
+        opacity: 0;
+        width: 0%;
+        height: 0vh;
+        animation: navigate-out 2s ease-out;
+    }
+
+    .nav-logo{
+        width: 120px;
+    }
     .contact{
         flex-direction: column;
         backdrop-filter: blur(10px);
@@ -198,39 +252,45 @@ button.nav-menu:hover{
     form{
         background-color: rgba(0, 0, 0, 0);
     }
-
+    .contact-details{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
     .contact-details>address{
         width: 100%;
-        height: 100%;
-        padding: 50px;
+        display: flex;
+        justify-content: center;
         align-content: center;
-        color: black;
-        background-color: #7777774a;
+        color: #ffffff;
     }
     
     /*Social Media*/
     .contact-details>.social-media{
         display: flex;
-        width: 50%;
-        height:100%;
-        padding: 100px;
+        width: 100%;
         align-content: center;
         text-align: center;
-        background-color: #7777774a;
+        gap: 50px;
     }
 
     .contact-details{
         width: 100%;
-        background: url("images/pen-4337521_1280 (2).jpg") no-repeat center fixed;
-        background-size: cover;
-        padding: 0;
+       
     }
 
     .quicklinks{
         width:100%;
-        float: right;
-        background: url("images/wood-1866667_1280.jpg") no-repeat center fixed;
-        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .map-sec{
+        width: 100%;
     }
    
 }
@@ -246,19 +306,20 @@ button.nav-menu:hover{
 
     .location-sec{
         padding: 20px;
-        flex: 1 100%;
+        width: 100%;
     }
 
     .form-sec{
-        flex: 1 100%;
+        width: 100%;
+        padding: 0%;
     }
 
     form{
         background-color: rgba(0, 0, 0, 0);
+        padding: 0px;
     }    
 }
-
-@media screen and (max-width:360px) {
+@media screen and (max-width:380px) {
     .contact{
         flex-direction: column;
         backdrop-filter: blur(10px);
@@ -269,14 +330,40 @@ button.nav-menu:hover{
 
     .location-sec{
         padding: 2px;
-        flex: 1 100%;
+        width: 100%;
     }
 
+
     .form-sec{
-        flex: 1 100%;
+        width: 100%;
     }
 
     form{
         background-color: rgba(0, 0, 0, 0);
+        padding: 0px;
+    }    
+}
+@media screen and (max-width:360px) {
+    .nav-sec{width: 100%;}
+    .contact{
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.404);
+        height: 1200px;
+        width: 100%;
+    }
+
+    .location-sec{
+        padding: 2px;
+        width: 100%;
+    }
+
+    .form-sec{
+        width: 100%;
+    }
+
+    form{
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0px;
     }    
 }

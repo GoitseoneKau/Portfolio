@@ -73,6 +73,65 @@ ul.certificates>li>a>b{
     font-size: 15px;
 }
 
+
+.projects{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.681);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    perspective: 1000px;
+    perspective-origin: 1000px;
+    transform-style: preserve-3d;
+}
+.projects>div.slide>.image{
+    width:20%;
+    height: 50%;
+    position: absolute;
+}
+
+
+
+@keyframes rotate {
+    0%{ transform: rotateY(0deg)}
+    100%{ transform: rotateY(360deg)}
+}
+.projects>div.slide{
+    width:100%;
+    height: 90%;
+    transform-style: preserve-3d;
+    animation: rotate 70s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.projects>div.slide>.image:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+.projects>div.slide>.image:nth-child(2){
+    transform: rotateY(72deg) translateZ(300px);
+  
+}
+.projects>div.slide>.image:nth-child(3){
+    transform: rotateY(144deg) translateZ(300px);
+    background-color: black;
+}
+.projects>div.slide>.image:nth-child(4){
+    transform: rotateY(216deg) translateZ(300px);
+    background-color: black;
+}
+.projects>div.slide>.image:nth-child(5){
+    transform: rotateY(288deg) translateZ(300px);
+    background-color: black;
+}
+
+
+
 .drive{
     display: flex;
     justify-content: center;
@@ -116,21 +175,27 @@ h1.driveHead{
     align-content: center;
     flex-flow: row wrap;
     width: 100%;
+    height: 400px;
     margin-top: 250px;
     background-color: rgba(255, 255, 255, 0.478);
     backdrop-filter: blur(15px);
 }
 
 .text1{
-    padding: 25px;
+    padding: 50px;
     flex: 2 50%;
     width: 100%;
     height: 100%;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .btn{
-    padding: 15px;
+    padding: 30px;
+    height: 80px;
 }
 
 .btn-contact{
@@ -146,8 +211,12 @@ h1.driveHead{
 .btn-contact:hover{
     background-color:snow;
     color: black;
+    border-color: snow ;
 }
-
+.btn-contact:active{
+    border: 5px  black;
+    border-style:inset;
+}
 .img1{
     flex: 2 50%;
     width: 100%;
@@ -175,74 +244,46 @@ button.nav-menu:hover{
     color:rgb(0, 0, 0);
 }
 
+.contact-sec{margin-top: 0px;background-color: #54545477; backdrop-filter: blur(10px);}
 
-/*header for drive media queries,centering drive title*/
-@media  screen and (max-width:1200px) { 
-    h1.driveHead{
-        top: 125%;
-        left: 25%;
-    }
+/*Quicklinks to other pages*/
+.quicklinks{
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    align-content: center;
+
 }
 
-@media  screen and (max-width:850px) {  
-    h1.driveHead{
-        top: 125%;
-        left: 50%;
-    }
+.quicklinks>.links>li{
+    margin-top: 10px;
+    list-style-type:none;
 }
 
-@media  screen and (max-width:750px) {  
-    h1.driveHead{
-        top: 100%;
-        left: 50%;
-    }
-}
-
-@media  screen and (max-width:700px) {  
-    h1.driveHead{
-        top: 105%;
-        left: 50%;
-    }
-}
-
-@media  screen and (max-width:650px) {  
-    h1.driveHead{
-        top: 110%;
-        left: 50%;
-    }
-}
-
-@media  screen and (max-width:620px) {  
-    h1.driveHead{
-        top: 115%;
-        left: 50%;
-    }
-}
-
-@media  screen and (max-width:600px) {  
-    h1.driveHead{
-        top: 105%;
-        left: 50%;
-    }
-}
-
-@media  screen and (max-width:510px) {  
-    h1.driveHead{
-        top: 110%;
-        left: 50%;
-    }
-}
-
-@media  screen and (max-width:500px) {  
-    h1.driveHead{
-        top: 110%;
-        left: 50%;
-    }
-}
 
 /*navigation bar and div tags responsiveness*/ 
 @media  screen and (max-width:850px) {
+    .contact-details>address{
+        width: 100%;
+        float: left;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: #ffffff
+    }
     
+    /*Social Media*/
+    .contact-details>.social-media{
+        display: flex;
+        width: 100%;
+        height: 40%;
+        align-content: center;
+        text-align: center;
+        gap: 50px;
+    }
     button.btnActive:active{
         background-color: rgba(0, 0, 0, 0.508);
         color:rgb(0, 0, 0);
@@ -270,29 +311,42 @@ button.nav-menu:hover{
     }
 
     .closing{
-        flex-direction: row-reverse;
+        height: 500px;
     }
 
     .text1{
-        padding: 5px;
-        flex: 1 100%;
-        height: 30%;
+        padding: 5px 30px;
+        height: 50%;
         width: 100%;;
-        flex-direction: row-reverse;
     }
     
     .img1{
         flex: 1 100%;
-        height:70%;
-        flex-direction: row-reverse;
+        height:50%;
     }
+
+    .map-sec{margin-top: 0px;background-color: rgba(255, 255, 255, 0.478);backdrop-filter: blur(10px);}
     
+    .quicklinks{background-color: rgba(255, 255, 255, 0.478);}
+
+    .contact-details{background-color: rgba(255, 255, 255, 0.478);}
+
     .show{
+        margin-top: -50px;
         display: block;
         width: 100%;
         height: 100vh;
-        background-color: rgba(8, 8, 7, 0.891);
+        background-color: rgba(0, 0, 0, 0.891);
         animation: navigate 2s ease;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .hide{
+        opacity: 0;
+        width: 0%;
+        height: 0vh;
+        animation: navigate-out 2s ease-out;
     }
 
 }

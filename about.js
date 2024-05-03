@@ -1,4 +1,4 @@
-window.onload=()=>{
+
     //For About Page
 //about-certificates js for Qualifications
 let certificateLinks = {
@@ -24,4 +24,19 @@ let certificateLinks = {
     certList.innerHTML = certificate;
     certificatesParent.item(0).appendChild(certList);
   })
-}
+
+
+  window.onload=()=>{
+    let image = document.querySelectorAll(".projects>div.slide>.image");
+    let slide = document.querySelector(".slide");
+    image.forEach((imgDiv)=>{
+      imgDiv.addEventListener("click",()=>{
+        if(slide.style.animationPlayState=="paused"){
+          slide.style.animationPlayState = "running";
+        }else{
+          slide.style.animationPlayState= "paused";
+        }
+      });
+      
+    });
+  }
