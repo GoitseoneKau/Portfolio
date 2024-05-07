@@ -1,7 +1,8 @@
 
 body{
-    background: url("images/car-8031261_1280.jpg") no-repeat center fixed;
+    background: url("images/car-8031261_1280.jpg") no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .about{
     width: 100%;
@@ -11,14 +12,13 @@ body{
     justify-content: center;
     align-content: center;
     flex-flow: row wrap;
-    background-color: rgba(255, 255, 255, 0.364);
-    color: black;
+    background-color: rgba(0, 0, 0, 0.461);
+    color: snow;
     backdrop-filter: blur(15px);
 }
 
 .about>h1{
     flex: 1 100%;
-   
 }
 
 .about>p,.about>ul{
@@ -26,8 +26,23 @@ body{
 }
 
 .about>p{
-    text-align: left;
+    text-align: center;
     align-content: center;
+    font-size: 12px;
+    font-style: italic;
+    padding: 15px 50px;
+    width: 60%;
+
+}
+.about>p>i.fa-quote-left{
+    float: left;
+}
+
+.about>p>i.fa-quote-right{
+    float: right;
+}
+.about>p>i{
+    font-size: 14px;
 }
 
 h1,p{
@@ -62,11 +77,12 @@ ul.certificates>li{
 ul.certificates>li>a{
     font: 500 13px "Arial black";
     text-decoration: none;
-    color: black;
+    color: snow;
 }
 
 ul.certificates>li>a:hover{
-    color: rgb(0, 11, 169);
+    color: rgb(0, 255, 68);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 ul.certificates>li>a>b{
@@ -83,16 +99,14 @@ ul.certificates>li>a>b{
     justify-content: center;
     align-content: center;
     perspective: 1000px;
-    perspective-origin: 1000px;
     transform-style: preserve-3d;
 }
+
 .projects>div.slide>.image{
     width:20%;
     height: 50%;
     position: absolute;
 }
-
-
 
 @keyframes rotate {
     0%{ transform: rotateY(0deg)}
@@ -177,7 +191,7 @@ h1.driveHead{
     width: 100%;
     height: 400px;
     margin-top: 250px;
-    background-color: rgba(255, 255, 255, 0.478);
+    background-color: rgba(255, 255, 255, 0.392);
     backdrop-filter: blur(15px);
 }
 
@@ -186,7 +200,7 @@ h1.driveHead{
     flex: 2 50%;
     width: 100%;
     height: 100%;
-    color: black;
+    color: snow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,17 +248,19 @@ h1.driveHead{
 }
 
 button.nav-menu{
-    background-color: rgba(0, 0, 0, 0.891);
-    border: 1px solid rgb(0, 0, 0);
-    color: snow;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
 }
 
 button.nav-menu:hover{
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
+    color:snow;
 }
 
-.contact-sec{margin-top: 0px;background-color: #54545477; backdrop-filter: blur(10px);}
+.contact-sec{
+    margin-top: 0px;
+    background-color: #54545477;
+    backdrop-filter: blur(10px);
+}
 
 /*Quicklinks to other pages*/
 .quicklinks{
@@ -254,7 +270,6 @@ button.nav-menu:hover{
     padding: 15px;
     color: rgb(255, 255, 255);
     align-content: center;
-
 }
 
 .quicklinks>.links>li{
@@ -263,8 +278,108 @@ button.nav-menu:hover{
 }
 
 
+.projects-s{
+    display: none;
+}
+
+@keyframes fade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
 /*navigation bar and div tags responsiveness*/ 
+@media  screen and (max-width:1100px) {
+    
+    .quicklinks{
+        background-color: rgba(0, 0, 0, 0.248);
+        width:100%;
+        height: 30%;
+    }
+    .contact-details{ background-color: rgba(0, 0, 0, 0.248);}
+
+}
 @media  screen and (max-width:850px) {
+
+    .projects-s>div.slide>.image.active{
+        animation: fade 1s ease;
+        opacity:1;
+    }
+
+    .projects-s>div.slide>.image{
+        width:100%;
+        height: 80%;
+        background-color: black;
+        position: absolute;
+        opacity: 0;
+    }
+    .projects-s>div.slide>.image>img{
+        width:100%;
+        height:100%;
+    }
+    .projects-s{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        background-color: #000000cc;
+        backdrop-filter: blur(10px);
+    }
+
+    .projects{
+        display: none;
+    }
+
+    .projects-s>div.slide{
+        padding: 35px;
+        opacity: 1;
+        width:100%;
+        height:80%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .projects-s>h1{
+        height:20%;
+        padding: 10px 0px;
+    }
+
+    .projects-s>div.slide>button{
+        border: none;
+        background-color: #01010167;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        justify-self: center;
+        z-index: 1;
+    }
+    
+    .projects-s>div.slide>button:hover{
+        border: none;
+        background-color: #000000cc; 
+    }
+  
+    .projects-s>div.slide>button:active{
+        border: none;
+        background-color: #18161600; 
+    }
+
+    .left-arrow{ left: 0;}
+    
+    .right-arrow{right: 0;}
+    
+    .fa-chevron-left,.fa-chevron-right{
+        font-size: 2em;
+        font-weight: 600;
+        color:snow;
+    }
+
     .contact-details>address{
         width: 100%;
         float: left;
@@ -284,19 +399,19 @@ button.nav-menu:hover{
         text-align: center;
         gap: 50px;
     }
+
     button.btnActive:active{
         background-color: rgba(0, 0, 0, 0.508);
         color:rgb(0, 0, 0);
         border: 1px solid rgb(255, 255, 255);
-        
     }
 
     .about>p,.about>ul{
         flex: 1 100%;
     }
 
-    .drive{  
-        margin-top: 130px;
+    .drive{ 
+        margin-top: 150px;
     }
 
     .drive>div.drive_image{
@@ -325,11 +440,195 @@ button.nav-menu:hover{
         height:50%;
     }
 
-    .map-sec{margin-top: 0px;background-color: rgba(255, 255, 255, 0.478);backdrop-filter: blur(10px);}
+    .map-sec{
+        margin-top: 0px;
+        background-color: rgba(0, 0, 0, 0.248);
+        backdrop-filter: blur(10px);
+    }
     
-    .quicklinks{background-color: rgba(255, 255, 255, 0.478);}
+    .quicklinks{
+        background-color: rgba(0, 0, 0, 0.248);
+        width:100%;
+        height: 30%;
+    }
 
-    .contact-details{background-color: rgba(255, 255, 255, 0.478);}
+    .contact-details{ background-color: rgba(0, 0, 0, 0.248);}
+
+    .show{
+        margin-top: -50px;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.891);
+        animation: navigate 2s ease;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .hide{
+        opacity: 0;
+        width: 0%;
+        height: 0vh;
+        animation: navigate-out 2s ease-out;
+    }
+
+
+}
+
+/*navigation bar and div tags responsiveness*/ 
+@media  screen and (max-width:500px) {
+
+    .projects-s>div.slide>.image.active{
+        animation: fade 1s ease;
+        opacity:1;
+    }
+
+    .projects-s>div.slide>.image{
+        width:100%;
+        height: 80%;
+        background-color: black;
+        position: absolute;
+        opacity: 0;
+    }
+    .projects-s>div.slide>.image>img{
+        width:100%;
+        height:100%;
+    }
+    .projects-s{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        background-color: #000000cc;
+        backdrop-filter: blur(10px);
+    }
+
+    .projects{
+        display: none;
+    }
+
+    .projects-s>div.slide{
+        padding: 35px;
+        opacity: 1;
+        width:100%;
+        height:80%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .projects-s>h1{
+        height:20%;
+        padding: 10px 0px;
+    }
+
+    .projects-s>div.slide>button{
+        border: none;
+        background-color: #01010167;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        justify-self: center;
+        z-index: 1;
+    }
+    
+    .projects-s>div.slide>button:hover{
+        border: none;
+        background-color: #000000cc; 
+    }
+  
+    .projects-s>div.slide>button:active{
+        border: none;
+        background-color: #18161600; 
+    }
+
+    .left-arrow{ left: 0;}
+    
+    .right-arrow{right: 0;}
+    
+    .fa-chevron-left,.fa-chevron-right{
+        font-size: 2em;
+        font-weight: 600;
+        color:snow;
+    }
+
+    .contact-details>address{
+        width: 100%;
+        float: left;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: #ffffff
+    }
+    
+    /*Social Media*/
+    .contact-details>.social-media{
+        display: flex;
+        width: 100%;
+        height: 40%;
+        align-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    button.btnActive:active{
+        background-color: rgba(0, 0, 0, 0.508);
+        color:rgb(0, 0, 0);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .about>p,.about>ul{
+        flex: 1 100%;
+    }
+
+    .drive{ 
+        margin-top: 150px;
+    }
+
+    .drive>div.drive_image{
+        flex: 1 100%;
+        height: 100%;
+    }
+    
+    .driven_text{
+        padding: 10px;
+        flex: 1 100%;
+        height: 100%;
+    }
+
+    .closing{
+        height: 500px;
+    }
+
+    .text1{
+        padding: 5px 30px;
+        height: 50%;
+        width: 100%;;
+    }
+    
+    .img1{
+        flex: 1 100%;
+        height:50%;
+    }
+
+    .map-sec{
+        margin-top: 0px;
+         background-color: rgba(0, 0, 0, 0.248);
+        backdrop-filter: blur(10px);
+    }
+    
+    .quicklinks{
+        background-color: rgba(0, 0, 0, 0.248);
+        width:100%;
+        height: 30%;
+    }
+
+    .contact-details{background-color: rgba(0, 0, 0, 0.248);}
 
     .show{
         margin-top: -50px;
@@ -350,4 +649,3 @@ button.nav-menu:hover{
     }
 
 }
-
