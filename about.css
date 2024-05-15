@@ -4,6 +4,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+
 .about{
     width: 100%;
     margin-top: 250px;
@@ -301,6 +303,11 @@ button.nav-menu:hover{
 
 }
 @media  screen and (max-width:850px) {
+    button.btnActive{
+        color:white;
+        background-color: black;
+        border: 0px black;
+    }
 
     .projects-s>div.slide>.image.active{
         animation: fade 1s ease;

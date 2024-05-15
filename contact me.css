@@ -201,10 +201,13 @@ button.nav-menu:hover{
 
 @media  screen and (max-width:850px) {
    
-    .btnActive:active{
+   
+    button.btnActive{
         color:white;
+        background-color: black;
+        border: 0px black;
     }
-    
+
     .show{
         display: block;
         margin-top: -50px;

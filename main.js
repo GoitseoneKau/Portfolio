@@ -6,15 +6,17 @@
     btnNav.onclick =function(){  
       nav.classList.remove("hide");
       nav.classList.add("show");
-      this.classList.toggle("btnAcvtive")
+      this.classList.add("btnActive");
     };
 
     btnClose.onclick=function(){
       nav.classList.add("hide");
+      nav.classList.remove("show");
+      btnNav.classList.remove("btnActive");
     }
   
 
-   mapLoad();
+  mapLoad();
   function mapLoad(){
     //map js
     const map = new ol.Map({
